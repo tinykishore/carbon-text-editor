@@ -6,6 +6,6 @@
 
 int main() {
     int c;
-    while (read(STDERR_FILENO, &c, 1) == 1);
+    while (read(STDERR_FILENO, &c, 1) == 1 && c != 'q');
     return 0;
 }
